@@ -5,23 +5,14 @@
       <input name="projectKeyword" id="projectKeyword" type="text">
     </form>
     <ul>
-      <li>
-        project 1
-        <p>
-          brief summary brief summary brief summary brief summary
-        </p>
-      </li>
-      <li>
-        project 2
-        <p>
-          brief summary brief summary brief summary brief summary
-        </p>
-      </li>
-      <li>
-        project 3
-        <p>
-          brief summary brief summary brief summary brief summary
-        </p>
+      <li
+        :class="{ selected: project === selected }"
+        v-for="project in projects"
+        :key="project.title"
+        @click="handleClick"
+      >
+        <span>{{ project.title }}</span>
+        <p>{{ project.summary }}</p>
       </li>
     </ul>
   </div>
@@ -31,6 +22,17 @@
 
 
 export default {
+
+  props: {
+    projects: Array,
+    selected: Object,
+    onSelect: Function
+  },
+  methods: {
+    handleClick() {
+      this.onSelect(this.project);
+    }
+  }
 
 };
 
@@ -49,6 +51,7 @@ export default {
     margin-top: 10px;
   }
 
+
   ul {
     margin: 0px;
     padding: 0px;
@@ -56,8 +59,22 @@ export default {
     li {
       list-style: none;
       border-bottom: 1px solid black;
+
+      span {
+        font-weight: bolder;
+      }
+
+      &:hover {
+        background-color: var(--lightgreen);
+        cursor: pointer;
+      }
+
     }
   }
+}
+
+.selected {
+  background-color: var(--darkgreen);
 }
 
 
