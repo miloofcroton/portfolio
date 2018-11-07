@@ -6,12 +6,17 @@
     <div class="about">
         <div class="image"></div>
         <div class="bio">
+          I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.
+
+          <br>
+          <br>
+
           A technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
-        
-          
+            
           <div class="emoji">
-            💻&nbsp; 📈&nbsp; 🏋️&nbsp; 🥋&nbsp; 🏔&nbsp; 🍖&nbsp; 🌆&nbsp; 🏈
+            💻 📈 🏋️ 🥋 🏔 🍖 🌆 🏈
           </div>
+          
         </div>
     </div>
   </main>
@@ -64,7 +69,6 @@ $margin-bottom: 40px;
 
   .bio {
     margin-bottom: $margin-bottom;
-    max-width: $max-width;
     line-height: 2rem;
     font-size: 1rem;
 
