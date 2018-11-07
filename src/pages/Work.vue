@@ -8,14 +8,24 @@
         <div class="bio">
           I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.
 
+
           <br>
           <br>
 
-          A technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
-            
-          <div class="emoji">
-            💻 📈 🏋️ 🥋 🏔 🍖 🌆 🏈
-          </div>
+          A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
+
+          <br>
+
+          <font-awesome-icon icon="laptop-code" />
+          <font-awesome-icon icon="atom" />
+          <font-awesome-icon icon="calculator" />
+          <font-awesome-icon icon="dumbbell" />
+          <font-awesome-icon icon="user-ninja" />
+          <font-awesome-icon icon="mountain" />
+          <font-awesome-icon icon="fire" />
+          <font-awesome-icon icon="city" />
+          <font-awesome-icon icon="puzzle-piece" />
+          <font-awesome-icon icon="football-ball" />
           
         </div>
     </div>
@@ -68,42 +78,24 @@ $margin-bottom: 40px;
   }
 
   .bio {
-    margin-bottom: $margin-bottom;
+    margin: 20px;
     line-height: 2rem;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 
-    .emoji {
-      font-size: 1.6rem;
-      padding-top: 30px;
-
-      /* @include media("retina2x") {
-        font-size: 2.2rem;
-      } */
+    svg {
+      margin: 5px;
     }
   }
 
-  /* @include media('>small', '<=medium') {
-    .bio {
-      .emoji {
-        font-size: 2.0rem;
-        padding-top: 10px;
-      }
-    }
-  }
-
-  @include media('<=small') {
+  /* @include media('<=small') {
     .bio {
       line-height: 2.0rem;
       font-size: 1.4rem;
-
-      .emoji {
-        font-size: 1.8rem;
-        padding-top: 10px;
-      }
     }
-  } */
+  }
 
-  /* @include media('<=medium') {
+  @include media('<=medium') {
     text-align: center;
     margin-bottom: 0px;
 
