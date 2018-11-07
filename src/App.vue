@@ -22,4 +22,38 @@ export default {
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+
+:root {
+  --darkgreen: rgb(0,230,118);
+  --lightgreen: rgb(180,241,87);
+  --black: rgb(33,33,33);
+  --grey: rgb(196,196,196);
+  --white: rgb(255,255,255);
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+body, html {
+  min-height: 100%;
+}
+
 </style>
