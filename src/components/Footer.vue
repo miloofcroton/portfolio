@@ -23,7 +23,6 @@ footer {
   color: black;
 }
 a, p {
-  font-family: Roboto, sans-serif;
   font-weight: bolder;
 }
 p {
