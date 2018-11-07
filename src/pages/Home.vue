@@ -1,16 +1,22 @@
 <template>
   <main>
     <div id="work" class="tile">
-      <RouterLink to="/work">Link</RouterLink>
-      <p>Work</p>
+      <p class="summary">Work</p>
+      <RouterLink to="/work">
+        <img src="../assets/categories/code.jpg" alt="code">
+      </RouterLink>
     </div>
     <div id="play" class="tile">
-      <RouterLink to="/play">Link</RouterLink>
-      <p>Play</p>
+      <RouterLink to="/play">
+        <img src="../assets/categories/nature.jpg" alt="nature">
+        <p class="summary">Play</p>
+      </RouterLink>
     </div>
     <div id="thoughts" class="tile">
-      <RouterLink to="/thoughts">Link</RouterLink>
-      <p>Thoughts</p>
+      <RouterLink to="/thoughts">
+        <img src="../assets/categories/thinker.jpg" alt="thinker">
+        <p class="summary">Thoughts</p>
+      </RouterLink>
     </div>
   </main>
 </template>
@@ -28,13 +34,15 @@ export default {
 main {
   display: grid;
   margin: 18px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .tile {
   border: 1px solid black;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  margin: 10px;
 
   &:hover {
     opacity: 50%;
@@ -42,16 +50,23 @@ main {
   }
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 
-#work { background: url(../assets/categories/code.jpg); }
-#play { background: url(../assets/categories/nature.jpg); }
-#thoughts { background: url(../assets/categories/thinker.jpg); }
+
+}
+
+.summary {
+  color: white;
+  text-shadow: 1px 1px 1px white;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
 
 /* a {
-  object-fit: cover;
-} */
-
-a {
   color: black;
   background-color: var(--darkgreen);
   padding: 12px;
@@ -63,6 +78,6 @@ a {
   &:hover {
     background-color: var(--lightgreen);
   }
-}
+} */
 
 </style>
