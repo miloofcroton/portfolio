@@ -1,5 +1,5 @@
 {
-  "name": "vue-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miloofcroton/vue-portfolio.git"
+    "url": "git+https://github.com/miloofcroton/portfolio.git"
   },
   "author": "Jack Toumey <jack@toumey.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miloofcroton/vue-portfolio/issues"
+    "url": "https://github.com/miloofcroton/portfolio/issues"
   },
-  "homepage": "https://github.com/miloofcroton/vue-portfolio#readme",
+  "homepage": "https://github.com/miloofcroton/portfolio#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
