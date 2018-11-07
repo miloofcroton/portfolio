@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <img alt="logo" src="../assets/logo.png">
+    <img alt="logo" src="../assets/logo/logo.png">
     <p>Copyright &copy; 2018. All rights reserved.</p>
     <a href="https://github.com/miloofcroton/vue-portfolio">This website</a> by
     <a href="https://github.com/miloofcroton">me</a>.
