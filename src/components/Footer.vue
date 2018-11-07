@@ -22,14 +22,15 @@ img {
 footer {
   color: black;
 }
-a, p {
-  font-weight: bolder;
-}
 p {
+  font-weight: bolder;
   margin: 5px auto;
 }
 a {
+  font-weight: bolder;
   display: inline-block;
+  text-decoration: none;
+  color: var(--darkgreen);
 }
 
 
