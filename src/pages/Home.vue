@@ -43,7 +43,7 @@ main {
   flex-grow: 1;
   padding: 50px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
     padding: 0;
     
