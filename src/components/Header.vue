@@ -26,6 +26,7 @@ a {
   padding: 6px;
   border: 1px solid var(--black);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
 
   &:hover {
     background-color: var(--lightgreen);

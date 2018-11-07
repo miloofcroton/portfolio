@@ -1,6 +1,9 @@
 <template>
   <footer>
-    <img alt="logo" src="../assets/logo/logo.png">
+    <a id="surround" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+      <img id="initial" alt="logo" src="../assets/logo/logo.png">
+      <img id="replacement" alt="logo" src="../assets/logo/logo-alt1.png" >
+    </a>
     <p>Copyright &copy; 2018. All rights reserved.</p>
     <a href="https://github.com/miloofcroton/vue-portfolio">This website</a> by
     <a href="https://github.com/miloofcroton">me</a>.
@@ -15,9 +18,24 @@ export default {
 
 <style scoped>
 
+#replacement {
+  display: none;
+}
+#surround:hover img[id="initial"] {
+  display: none;
+}
+#surround:hover img[id="replacement"] {
+  display: inline-block;
+  cursor: pointer;
+}
+
 img {
   width: 50px;
   padding-top: 10px;
+
+  &:hover {
+
+  }
 }
 footer {
   color: black;

@@ -1,18 +1,18 @@
 <template>
   <main>
     <Projects/>
-    <ProfileSidebar/>
+    <Profile/>
   </main>
 </template>
 
 <script>
 
-import ProfileSidebar from '../components/ProfileSidebar.vue';
+import Profile from '../components/Profile.vue';
 import Projects from '../components/Projects.vue';
 
 export default {
   components: {
-    ProfileSidebar, Projects
+    Profile, Projects
   }
 };
 
