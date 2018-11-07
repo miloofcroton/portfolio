@@ -14,4 +14,4 @@
 | command | explanation |
 | --------|-------- |
 | `npm i` | Install prereqs |
-| `npm serve` | Start live reloading environment |
+| `npm run serve` | Start live reloading environment |
