@@ -1,9 +1,9 @@
 <template>
   <div class="search-bar">
-    <label for="project">
-      search all projects
-      <input name="project" type="text">
-    </label>
+    <form id="search-input">
+      <label for="projectKeyword">search all projects</label>
+      <input name="projectKeyword" id="projectKeyword" type="text">
+    </form>
     <ul>
       <li>
         project 1
@@ -44,7 +44,7 @@ export default {
 
   border: 1px solid black;
 
-  label {
+  form {
     border-bottom: 1px solid black;
     margin-top: 10px;
   }
