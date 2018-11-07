@@ -25,7 +25,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 
 h2 {
   margin: 50px auto;
