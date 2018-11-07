@@ -13,5 +13,5 @@
 
 | command | explanation |
 | --------|-------- |
-| `npm i` | Instal prereqs |
+| `npm i` | Install prereqs |
 | `npm serve` | Start live reloading environment |
