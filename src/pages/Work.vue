@@ -1,8 +1,6 @@
 <template>
   <main>
-    <div>
-      <h2>Project info coming soon!</h2>
-    </div>
+    <Projects/>
     <ProfileSidebar/>
   </main>
 </template>
@@ -10,10 +8,11 @@
 <script>
 
 import ProfileSidebar from '../components/ProfileSidebar.vue';
+import Projects from '../components/Projects.vue';
 
 export default {
   components: {
-    ProfileSidebar
+    ProfileSidebar, Projects
   }
 };
 
