@@ -1,21 +1,21 @@
 <template>
   <main>
     <div id="work" class="tile">
-      <p class="summary">Work</p>
       <RouterLink to="/work">
         <img src="../assets/categories/code.jpg" alt="code">
+        <span class="summary">Work</span>
       </RouterLink>
     </div>
     <div id="play" class="tile">
       <RouterLink to="/play">
         <img src="../assets/categories/nature.jpg" alt="nature">
-        <p class="summary">Play</p>
+        <span class="summary">Play</span>
       </RouterLink>
     </div>
     <div id="thoughts" class="tile">
       <RouterLink to="/thoughts">
         <img src="../assets/categories/thinker.jpg" alt="thinker">
-        <p class="summary">Thoughts</p>
+        <span class="summary">Thoughts</span>
       </RouterLink>
     </div>
   </main>
@@ -32,52 +32,68 @@ export default {
 <style scoped lang="postcss">
 
 main {
+  /* 
   display: grid;
   margin: 18px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  grid-template-columns: 1fr 1fr 1fr; 
+  */
 
-.tile {
-  border: 1px solid black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-grow: 1;
+  padding: 50px;
 
-  &:hover {
-    opacity: 50%;
-    background-color: black;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    
+    span {
+      display: inline-block;
+    }
   }
-}
 
-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  .tile {
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 
+    a {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 50px;
 
-}
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        z-index: -1;
+      }
 
-.summary {
-  color: white;
-  text-shadow: 1px 1px 1px white;
-  position: absolute;
-  top: 25%;
-  left: 40%;
-}
+      span {
+        display: none;
+        color: black;
+      }
 
-/* a {
-  color: black;
-  background-color: var(--darkgreen);
-  padding: 12px;
-  text-decoration: none;
-  border: 1px solid var(--black);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
+      &:hover img {
+        opacity: 0.5;
+      }
 
-  &:hover {
-    background-color: var(--lightgreen);
+      &:hover span {
+        display: inline-block;
+      }
+
+    }
+    
   }
-} */
+
+}
 
 </style>

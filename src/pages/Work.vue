@@ -23,6 +23,8 @@ export default {
 main {
   display: grid;
   grid-template-columns: 70% 30%;
+  margin-top: 20px;
+
 }
 
 </style>
