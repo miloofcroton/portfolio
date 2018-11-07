@@ -5,7 +5,7 @@
       <img id="replacement" alt="logo" src="../assets/logo/logo-alt1.png" >
     </a>
     <p>Copyright &copy; 2018. All rights reserved.</p>
-    <a href="https://github.com/miloofcroton/vue-portfolio">This website</a> by
+    <a href="https://github.com/miloofcroton/portfolio">This website</a> by
     <a href="https://github.com/miloofcroton">me</a>.
   </footer>
 </template>
@@ -16,40 +16,39 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 
-#replacement {
-  display: none;
-}
-#surround:hover img[id="initial"] {
-  display: none;
-}
-#surround:hover img[id="replacement"] {
-  display: inline-block;
-  cursor: pointer;
-}
-
-img {
-  width: 50px;
-  padding-top: 10px;
-
-  &:hover {
-
-  }
-}
 footer {
   color: black;
-}
-p {
-  font-weight: bolder;
-  margin: 5px auto;
-}
-a {
-  font-weight: bolder;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--darkgreen);
-}
 
+  p {
+    font-weight: bolder;
+    margin: 5px auto;
+  }
+  a {
+    font-weight: bolder;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--darkgreen);
+  }
+
+  #surround {
+
+    #replacement {
+      display: none;
+    }
+    &:hover img[id="initial"] {
+      display: none;
+    }
+    &:hover img[id="replacement"] {
+      display: inline-block;
+      cursor: pointer;
+    }
+    img {
+      width: 50px;
+      padding-top: 10px;
+    }
+  }
+}
 
 </style>
