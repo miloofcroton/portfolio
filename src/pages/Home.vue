@@ -56,6 +56,7 @@ main {
     margin: 10px;
     border: 1px solid black;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    height: 400px;
 
     a {
       position: relative;

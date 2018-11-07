@@ -5,33 +5,31 @@
       <input name="projectKeyword" id="projectKeyword" type="text">
     </form>
     <ul>
-      <li
-        :class="{ selected: project === selected }"
+      <ProjectSearchCard
         v-for="project in projects"
         :key="project.title"
-        @click="handleClick"
+        :project="project"
+        :selected="selected"
+        :onSelect="onSelect"      
       >
-        <span>{{ project.title }}</span>
-        <p>{{ project.summary }}</p>
-      </li>
+      </ProjectSearchCard>
     </ul>
   </div>
 </template>
 
 <script>
 
+import ProjectSearchCard from './ProjectSearchCard';
 
 export default {
 
+  components: {
+    ProjectSearchCard
+  },
   props: {
     projects: Array,
     selected: Object,
     onSelect: Function
-  },
-  methods: {
-    handleClick() {
-      this.onSelect(this.project);
-    }
   }
 
 };

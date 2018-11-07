@@ -1,15 +1,8 @@
 <template>
   <div class="proj-view">
-    <h2>Project Yellow Submarine</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae, magnam tempore perferendis dicta quo, laudantium temporibus assumenda velit adipisci minus! Soluta explicabo alias fugiat aliquid nostrum, sunt voluptatibus deserunt.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae, magnam tempore perferendis dicta quo, laudantium temporibus assumenda velit adipisci minus! Soluta explicabo alias fugiat aliquid nostrum, sunt voluptatibus deserunt.
-    </p>
-    <p>
-      tags: Node, React, Express, Mongoose, MongoDB
-    </p>
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.description }}</p>
+    <p>tags: {{ project.tags }}</p>
   </div>
 </template>
 
@@ -17,6 +10,10 @@
 
 
 export default {
+
+  props: {
+    project: Object
+  }
 
 };
 
