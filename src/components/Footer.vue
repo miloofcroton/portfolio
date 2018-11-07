@@ -33,21 +33,20 @@ footer {
   }
 
   #surround {
-
-    #replacement {
-      display: none;
-    }
-    &:hover img[id="initial"] {
-      display: none;
-    }
-    &:hover img[id="replacement"] {
-      display: inline-block;
-      cursor: pointer;
-    }
     img {
       width: 50px;
       padding-top: 10px;
     }
+  }
+  #replacement {
+    display: none;
+  }
+  #surround:hover img[id="initial"] {
+    display: none;
+  }
+  #surround:hover img[id="replacement"] {
+    display: inline-block;
+    cursor: pointer;
   }
 }
 
