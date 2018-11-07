@@ -1,26 +1,17 @@
-# vue-portfolio
+# My Portfolio
 
-## Project setup
-```
-npm install
-```
+## Summary
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Tech used:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* vue
+* vue-router
+* postCSS
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Dev notes
+
+| command | explanation |
+| --------|-------- |
+| `npm i` | Instal prereqs |
+| `npm serve` | Start live reloading environment |
