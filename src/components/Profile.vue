@@ -73,6 +73,7 @@ $margin-bottom: 40px;
 .about {
   background-color: var(--black);
   color: var(--white);
+  max-height: 1000px;
 
   .topper {
 

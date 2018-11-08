@@ -25,6 +25,7 @@ main {
   grid-template-columns: 70% 30%;
   margin-top: 20px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  max-height: 1000px;
 }
 
 </style>
