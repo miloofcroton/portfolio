@@ -27,6 +27,7 @@
       <img class="tech" src="../assets/tech/google.png" alt="google">
       <img class="tech" src="../assets/tech/react.png" alt="react">
       <img class="tech" src="../assets/tech/vue.png" alt="vue">
+      <img class="tech" src="../assets/tech/javascript.png" alt="javascript">
       <img class="tech" src="../assets/tech/python.png" alt="python">
       <img class="tech" src="../assets/tech/ruby.png" alt="ruby">
       <img class="tech" src="../assets/tech/postgres.png" alt="postgres">
