@@ -77,12 +77,7 @@ export default {
 $max-width: 230px;
 $margin-bottom: 40px;
 
-.tech {
-  width: 36px;
-  height: 36px;
-  margin: 5px;
-  display: inline-block;
-}
+
 
 .about {
   background-color: var(--black);
@@ -136,6 +131,13 @@ $margin-bottom: 40px;
     line-height: 2rem;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+
+    .tech {
+      width: 36px;
+      height: 36px;
+      margin: 5px;
+      display: inline-block;
+    }
 
     svg {
       margin: 5px;
