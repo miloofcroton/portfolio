@@ -42,6 +42,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   flex-grow: 1;
   padding: 50px;
+  height: 100%;
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
@@ -56,7 +57,7 @@ main {
     margin: 10px;
     border: 1px solid black;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-    height: 400px;
+    height: 100%;
 
     a {
       position: relative;
