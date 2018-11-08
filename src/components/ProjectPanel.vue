@@ -39,10 +39,7 @@ export default {
       filter: {
         query: ''
       },
-      sort: {
-        sort: 'date',
-        direction: 1
-      },
+      sort: ['date', 1],
       projects: [
         {
           date: new Date(2018, 10, 24),
@@ -86,10 +83,7 @@ export default {
       });
     },
     sortedProjects() {
-      const { sort, direction } = this.sort;
-      // if(!sort) {
-      //   sort = 'date';
-      // }
+      const [sort, direction] = this.sort;
 
       return this.filteredProjects
         .slice()
@@ -112,7 +106,7 @@ export default {
 
 .project-panel {
   display: grid;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 13% auto;
 
   border: 1px solid black;
 
