@@ -23,38 +23,50 @@
         I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.
       </p>
 
-      <img class="tech" src="../assets/tech/aws2.png" alt="aws">
-      <img class="tech" src="../assets/tech/google.png" alt="google">
-      <img class="tech" src="../assets/tech/react.png" alt="react">
-      <img class="tech" src="../assets/tech/vue.png" alt="vue">
-      <img class="tech" src="../assets/tech/javascript.png" alt="javascript">
-      <img class="tech" src="../assets/tech/python.png" alt="python">
-      <img class="tech" src="../assets/tech/ruby.png" alt="ruby">
-      <img class="tech" src="../assets/tech/postgres.png" alt="postgres">
-      <img class="tech" src="../assets/tech/mongo.png" alt="mongo">
+      
+      <TechIcon
+        v-for="tech in this.listedTech"
+        :key="tech"
+        :tag="tech"
+        class="tech"
+      />
 
       <p>
         A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
       </p>
 
-      <font-awesome-icon icon="laptop-code" />
-      <font-awesome-icon icon="atom" />
-      <font-awesome-icon icon="calculator" />
-      <font-awesome-icon icon="dumbbell" />
-      <font-awesome-icon icon="user-ninja" />
-      <font-awesome-icon icon="mountain" />
-      <font-awesome-icon icon="fire" />
-      <font-awesome-icon icon="city" />
-      <font-awesome-icon icon="puzzle-piece" />
-      <font-awesome-icon icon="football-ball" />
-      
+      <font-awesome-icon 
+        v-for="activity in this.listedActivities"
+        :key="activity"
+        :icon="activity"
+      />
+
     </div>
   </div>
 </template>
 
 <script>
 
+
+import TechIcon from './TechIcon';
+
 export default {
+  components: {
+    TechIcon
+  },
+  data() {
+    return {
+      listedTech: [
+        'aws', 'google', 'react', 'vue', 'javascript', 'python', 
+        'ruby', 'postgres', 'mongodb'
+      ],
+      listedActivities: [
+        'laptop-code', 'atom', 'calculator', 'dumbbell', 'user-ninja', 
+        'mountain', 'fire', 'city', 'puzzle-piece', 'football-ball'
+      ]
+
+    };
+  }
 
 };
 
@@ -67,7 +79,9 @@ $margin-bottom: 40px;
 
 .tech {
   width: 36px;
+  height: 36px;
   margin: 5px;
+  display: inline-block;
 }
 
 .about {

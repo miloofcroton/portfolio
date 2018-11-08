@@ -10,7 +10,7 @@
         :key="project.title"
         :project="project"
         :selected="selected"
-        :onSelect="onSelect"      
+        :onSelect="onSelect" 
       >
       </ProjectCard>
     </ul>
@@ -21,9 +21,6 @@
 
 import ProjectCard from './ProjectCard';
 import ProjectSearch from './ProjectSearch';
-
-
-
 
 export default {
 
@@ -64,7 +61,119 @@ export default {
           summary: 'Why are the Raiders so bad? :(',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
           tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
-        }
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
+        {
+          date: new Date(2018, 9, 30),
+          title: 'Raiders',
+          summary: 'Why are the Raiders so bad? :(',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus molestiae perferendis atque, optio quam numquam dignissimos debitis harum id non aperiam veritatis dicta reiciendis tempora eos quia et enim?',
+          tags: ['Node', 'Vue', 'MongoDB', 'Mongoose']
+        },
       ],
     };
   },
