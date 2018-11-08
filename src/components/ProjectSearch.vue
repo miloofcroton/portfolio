@@ -13,10 +13,10 @@
       v-model="sort" 
       v-on:change="handleSortChange"
     >
-      <option value="['date', 1]">Date: New to Old</option>
-      <option value="['date', -1]">Date: Old to New</option>
-      <option value="['title', 1]">Title: A to Z</option>
-      <option value="['title', -1]">Title: Z to A</option>
+      <option value="{ 'key':'date', 'direction': 1 }">Date: New to Old</option>
+      <option value="{ 'key':'date', 'direction': -1 }">Date: Old to New</option>
+      <option value="{ 'key':'title', 'direction': 1 }">Title: A to Z</option>
+      <option value="{ 'key':'title', 'direction': -1 }">Title: Z to A</option>
     </select>
   </form>
 </template>
@@ -37,7 +37,8 @@ export default {
   },
   methods: {
     handleSortChange() {
-      this.onSort([this.sort, this.direction]);
+      const { key, direction } = JSON.parse(this.sort.replace(/'/g, '"'));
+      this.onSort({ key, direction });
     },
     handleFilterChange() {
       const filter = {

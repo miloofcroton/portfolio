@@ -39,7 +39,10 @@ export default {
       filter: {
         query: ''
       },
-      sort: ['date', 1],
+      sort: {
+        key: 'date',
+        direction: 1,
+      },
       projects: [
         {
           date: new Date(2018, 10, 24),
@@ -83,14 +86,13 @@ export default {
       });
     },
     sortedProjects() {
-      const [sort, direction] = this.sort;
-
+      const { key, direction } = this.sort;
       return this.filteredProjects
         .slice()
         .sort((a, b) => {
-          if(a[sort] > b[sort]) return 1 * direction;
-          if(a[sort] < b[sort]) return -1 * direction;
-          if(a[sort] === b[sort]) return 0;
+          if(a[key] > b[key]) return 1 * direction;
+          if(a[key] < b[key]) return -1 * direction;
+          if(a[key] === b[key]) return 0;
         });
 
     }
@@ -106,7 +108,7 @@ export default {
 
 .project-panel {
   display: grid;
-  grid-template-rows: 13% auto;
+  grid-template-rows: 15% auto;
 
   border: 1px solid black;
 
