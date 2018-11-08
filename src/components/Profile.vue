@@ -17,17 +17,24 @@
         </a>
       </div>
     </div>
+
     <div class="bio">
-      I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.
+      <p>
+        I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.
+      </p>
 
+      <img class="tech" src="../assets/tech/aws2.png" alt="aws">
+      <img class="tech" src="../assets/tech/google.png" alt="google">
+      <img class="tech" src="../assets/tech/react.png" alt="react">
+      <img class="tech" src="../assets/tech/vue.png" alt="vue">
+      <img class="tech" src="../assets/tech/python.png" alt="python">
+      <img class="tech" src="../assets/tech/ruby.png" alt="ruby">
+      <img class="tech" src="../assets/tech/postgres.png" alt="postgres">
+      <img class="tech" src="../assets/tech/mongo.png" alt="mongo">
 
-      <br>
-      <br>
-
-      A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
-
-      <br>
-      <br>
+      <p>
+        A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.
+      </p>
 
       <font-awesome-icon icon="laptop-code" />
       <font-awesome-icon icon="atom" />
@@ -56,6 +63,11 @@ export default {
 
 $max-width: 230px;
 $margin-bottom: 40px;
+
+.tech {
+  width: 36px;
+  margin: 5px;
+}
 
 .about {
   background-color: var(--black);
@@ -96,7 +108,7 @@ $margin-bottom: 40px;
 
       a {
         text-align: left;
-        color: white;
+        color: var(--darkgreen);
         text-decoration: none;
         display: block;
       }
@@ -111,6 +123,8 @@ $margin-bottom: 40px;
 
     svg {
       margin: 5px;
+      font-size: 26px;
+      color: var(--darkgreen);
     }
   }
 }
