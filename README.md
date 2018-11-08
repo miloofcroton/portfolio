@@ -6,7 +6,11 @@
 
 * vue
 * vue-router
+* vue-cli configs
 * postCSS
+* fontawesome
+* babel
+* eslint
 
 
 ## Dev notes
