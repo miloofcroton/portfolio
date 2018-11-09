@@ -2,6 +2,7 @@
 <template>
   <div class="projects">
       <ProjectPanel
+        :projects="projects"
         :selected="selectedProject"
         :onSelect="handleSelect"
       />
@@ -16,20 +17,16 @@
 import ProjectPanel from '../components/ProjectPanel.vue';
 import ProjectView from '../components/ProjectView.vue';
 
+import projects from '../content/projects.js';
+
 export default {
   components: {
     ProjectPanel, ProjectView
   },
   data() {
     return {
-      selectedProject:
-        {
-          date: new Date(2018, 10, 24),
-          title: 'Banana Republic',
-          summary: 'The banana empire ipsum, solely devoted to providing me with bananas',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed odio eos odit enim voluptates doloribus, corrupti similique repellat illum nisi, ratione eius magni natus fuga, laudantium minima esse! Provident.',
-          tags: ['Node', 'React', 'Express', 'Mongoose', 'MongoDB']
-        },
+      projects,
+      selectedProject: null
     };
   },
   methods: {
