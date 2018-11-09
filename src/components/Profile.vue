@@ -58,7 +58,7 @@ export default {
     return {
       listedTech: [
         'aws', 'google', 'react', 'vue', 'javascript', 'python', 
-        'ruby', 'postgres', 'mongodb'
+        'ruby', 'postgressql', 'mongodb'
       ],
       listedActivities: [
         'laptop-code', 'atom', 'calculator', 'dumbbell', 'user-ninja', 

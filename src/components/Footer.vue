@@ -7,6 +7,32 @@
     <p>Copyright &copy; 2018. All rights reserved.</p>
     <a href="https://github.com/miloofcroton/portfolio">This website</a> by
     <a href="https://github.com/miloofcroton">me</a>.
+    <ul class="info">
+      <li>
+        <a href="../assets/contact/contact.vcf" target="_blank" download>
+          <font-awesome-icon icon="address-book" />
+          <span class="label">Business Card</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:jack@toumey.io" target="_blank">
+          <font-awesome-icon icon="envelope" />
+          <span class="label">Email</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/miloofcroton" target="_blank">
+          <font-awesome-icon :icon="['fab', 'github']" />
+          <span class="label">Github Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="../assets/contact/public.key" target="_blank" download>
+          <font-awesome-icon icon="key" />
+          <span class="label">Public Key</span>
+        </a>
+      </li>
+		</ul>
   </footer>
 </template>
 
@@ -47,6 +73,23 @@ footer {
   #surround:hover img[id="replacement"] {
     display: inline-block;
     cursor: pointer;
+  }
+
+  .info {    
+    padding-inline-start: unset;
+
+    li {
+      display: inline;
+      margin: 5px;
+      list-style: none;
+      font-size: 24px;
+      a {
+        color: black;
+        .label {
+          display: none;
+        }
+      }
+    }
   }
 }
 

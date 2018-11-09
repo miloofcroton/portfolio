@@ -4,10 +4,15 @@ import App from './App.vue';
 import router from './router';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLaptopCode, faAtom, faCalculator, faDumbbell, faUserNinja, faMountain, faFire, faCity, faPuzzlePiece, faFootballBall } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faAtom, faCalculator, faDumbbell, 
+  faUserNinja, faMountain, faFire, faCity, faPuzzlePiece, 
+  faFootballBall, faAddressBook, faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-library.add(faLaptopCode, faAtom, faCalculator, faDumbbell, faUserNinja, faMountain, faFire, faCity, faPuzzlePiece, faFootballBall, faGithub, faLinkedin, faTwitter);
+library.add(faLaptopCode, faAtom, faCalculator, 
+  faDumbbell, faUserNinja, faMountain, faFire, faCity, 
+  faPuzzlePiece, faFootballBall, faAddressBook, faEnvelope, 
+  faKey, faGithub, faLinkedin, faTwitter);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;

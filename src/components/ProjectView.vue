@@ -19,6 +19,7 @@
 <script>
 import TechIcon from './TechIcon';
 
+
 export default {
   components: {
     TechIcon

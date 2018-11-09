@@ -1,14 +1,22 @@
 <template>
   <header class="header">
-    <h1>Jack Toumey</h1>
+    <RouterLink class="title" to="/">
+      <h1>Jack Toumey</h1>
+    </RouterLink>
+
+    
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink class='nav-button' to="/">Home</RouterLink>
+      <RouterLink class='nav-button' to="/about">About</RouterLink>
     </nav>
+
   </header>
 </template>
 
 <script>
+
+
+
 
 export default {
 
@@ -18,7 +26,12 @@ export default {
 
 <style scoped lang="postcss">
 
-a {
+.title {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-button {
   color: black;
   background-color: var(--darkgreen);
   margin: 8px;
