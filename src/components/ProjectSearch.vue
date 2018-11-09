@@ -13,8 +13,8 @@
       v-model="sort" 
       v-on:change="handleSortChange"
     >
-      <option value="{ 'key':'date', 'direction': 1 }">Date: New to Old</option>
-      <option value="{ 'key':'date', 'direction': -1 }">Date: Old to New</option>
+      <option value="{ 'key':'date', 'direction': -1 }">Date: New to Old</option>
+      <option value="{ 'key':'date', 'direction': 1 }">Date: Old to New</option>
       <option value="{ 'key':'title', 'direction': 1 }">Title: A to Z</option>
       <option value="{ 'key':'title', 'direction': -1 }">Title: Z to A</option>
     </select>
