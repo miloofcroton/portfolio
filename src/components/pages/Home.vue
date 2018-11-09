@@ -2,19 +2,19 @@
   <main>
     <div id="work" class="tile">
       <RouterLink to="/work">
-        <img src="../assets/categories/code.jpg" alt="code">
+        <img src="../../assets/categories/code.jpg" alt="code">
         <span class="summary">Work</span>
       </RouterLink>
     </div>
     <div id="play" class="tile">
       <RouterLink to="/play">
-        <img src="../assets/categories/nature.jpg" alt="nature">
+        <img src="../../assets/categories/nature.jpg" alt="nature">
         <span class="summary">Play</span>
       </RouterLink>
     </div>
     <div id="thoughts" class="tile">
       <RouterLink to="/thoughts">
-        <img src="../assets/categories/thinker.jpg" alt="thinker">
+        <img src="../../assets/categories/thinker.jpg" alt="thinker">
         <span class="summary">Thoughts</span>
       </RouterLink>
     </div>

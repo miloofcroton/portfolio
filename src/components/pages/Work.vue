@@ -7,8 +7,8 @@
 
 <script>
 
-import Profile from '../components/Profile.vue';
-import Projects from '../components/Projects.vue';
+import Profile from '../elements/Profile.vue';
+import Projects from '../elements/Projects.vue';
 
 export default {
   components: {

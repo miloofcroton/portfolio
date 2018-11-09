@@ -10,7 +10,7 @@
 
 <script>
 
-import MarkdownMaker from '../components/lib/MarkdownMaker.vue';
+import MarkdownMaker from '../lib/MarkdownMaker.vue';
 
 export default {
 

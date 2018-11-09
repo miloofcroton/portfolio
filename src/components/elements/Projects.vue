@@ -14,10 +14,10 @@
 
 <script>
 
-import ProjectPanel from '../components/ProjectPanel.vue';
-import ProjectView from '../components/ProjectView.vue';
+import ProjectPanel from './ProjectPanel.vue';
+import ProjectView from './ProjectView.vue';
 
-import projects from '../content/projects.js';
+import projects from '../../content/projects.js';
 
 export default {
   components: {

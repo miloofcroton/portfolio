@@ -21,7 +21,7 @@
         :key="tag"
         class="tag-box"
       >
-        <TechIcon :tag="tag"/>
+        <IconMaker :tag="tag"/>
         <p class="tag">{{ tag }}</p>
       </div>
     </div>
@@ -34,12 +34,12 @@
 </template>
 
 <script>
-import TechIcon from './TechIcon';
+import IconMaker from '../lib/IconMaker';
 
 
 export default {
   components: {
-    TechIcon
+    IconMaker
   },
   props: {
     project: Object

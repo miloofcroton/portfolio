@@ -1,15 +1,15 @@
 <template>
   <footer>
     <a id="surround" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
-      <img id="initial" alt="logo" src="../assets/logo/logo.png">
-      <img id="replacement" alt="logo" src="../assets/logo/logo-alt1.png" >
+      <img id="initial" alt="logo" src="../../assets/logo/logo.png">
+      <img id="replacement" alt="logo" src="../../assets/logo/logo-alt1.png" >
     </a>
     <p>Copyright &copy; 2018. All rights reserved.</p>
     <a href="https://github.com/miloofcroton/portfolio">This website</a> by
     <a href="https://github.com/miloofcroton">me</a>.
     <ul class="info">
       <li>
-        <a href="../assets/contact/contact.vcf" target="_blank" download>
+        <a href="../../assets/contact/contact.vcf" target="_blank" download>
           <font-awesome-icon icon="address-book" />
           <span class="label">Business Card</span>
         </a>
@@ -27,7 +27,7 @@
         </a>
       </li>
       <li>
-        <a href="../assets/contact/public.key" target="_blank" download>
+        <a href="../../assets/contact/public.key" target="_blank" download>
           <font-awesome-icon icon="key" />
           <span class="label">Public Key</span>
         </a>

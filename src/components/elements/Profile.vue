@@ -24,7 +24,7 @@
       </p>
 
       
-      <TechIcon
+      <IconMaker
         v-for="tech in this.listedTech"
         :key="tech"
         :tag="tech"
@@ -48,11 +48,11 @@
 <script>
 
 
-import TechIcon from './TechIcon';
+import IconMaker from '../lib/IconMaker';
 
 export default {
   components: {
-    TechIcon
+    IconMaker
   },
   data() {
     return {
@@ -95,7 +95,7 @@ $margin-bottom: 40px;
       max-width: $max-width;
       height: 180px;
       background-size: cover;
-      background-image: url(../assets/work/me-v1.png);
+      background-image: url(../../assets/work/me-v1.png);
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;

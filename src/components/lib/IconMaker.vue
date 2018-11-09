@@ -17,7 +17,7 @@ export default {
   computed: {
     url() {
       //eslint-disable-next-line no-undef
-      return require('../assets/tech/' + this.tag.toLowerCase() + '.png');
+      return require('../../assets/tech/' + this.tag.toLowerCase() + '.png');
     }
   }
 };
