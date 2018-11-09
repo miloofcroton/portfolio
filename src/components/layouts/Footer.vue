@@ -9,25 +9,25 @@
     <a href="https://github.com/miloofcroton">me</a>.
     <ul class="info">
       <li>
-        <a href="../../assets/contact/contact.vcf" target="_blank" download>
+        <a href="../../assets/contact/contact.vcf" target="_blank" download aria-label="Business Card">
           <font-awesome-icon icon="address-book" />
           <span class="label">Business Card</span>
         </a>
       </li>
       <li>
-        <a href="mailto:jack@toumey.io" target="_blank">
+        <a href="mailto:jack@toumey.io" target="_blank" aria-label="Email">
           <font-awesome-icon icon="envelope" />
           <span class="label">Email</span>
         </a>
       </li>
       <li>
-        <a href="https://github.com/miloofcroton" target="_blank">
+        <a href="https://github.com/miloofcroton" target="_blank" aria-label="Github">
           <font-awesome-icon :icon="['fab', 'github']" />
           <span class="label">Github Profile</span>
         </a>
       </li>
       <li>
-        <a href="../../assets/contact/public.key" target="_blank" download>
+        <a href="../../assets/contact/public.key" target="_blank" download aria-label="Public Key">
           <font-awesome-icon icon="key" />
           <span class="label">Public Key</span>
         </a>
@@ -48,14 +48,14 @@ footer {
   color: black;
 
   p {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     margin: 5px auto;
   }
   a {
     font-weight: bolder;
     display: inline-block;
     text-decoration: none;
-    color: var(--darkgreen);
+    color: black;
   }
 
   #surround {
