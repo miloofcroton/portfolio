@@ -4,15 +4,14 @@
       :onFilter="handleFilter"
       :onSort="handleSort"
     />
-    <ul class="scroll">
-      <ProjectCard
-        v-for="project in sortedProjects"
-        :key="project.title"
-        :project="project"
-        :selected="selected"
-        :onSelect="onSelect" 
-      >
-      </ProjectCard>
+    <ul class="scroll">    
+        <ProjectCard
+          v-for="project in sortedProjects"
+          :key="project.title"
+          :project="project"
+          :selected="selected"
+          :onSelect="onSelect" 
+        />
     </ul>
   </div>
 </template>
