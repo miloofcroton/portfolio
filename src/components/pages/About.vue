@@ -1,6 +1,7 @@
 <template>
   <main>
-    <h2>About This Site</h2>
+    <h2 class="greeting" ref="greeting" >Hello</h2>
+
     <p>
       This site is designed to be a single website that can house pretty much everything I want to publically publish on the internet
     </p>
@@ -18,9 +19,51 @@
 </template>
 
 <script>
+import scifi from 'scifi';
+
+const GREETINGS = [
+  'Hello',
+  'Hola',
+  'Bonjour',
+  'Ciao',
+  'Namaste',
+  'Salaam',
+  'Guten tag',
+  'Bună ziua'
+];
 
 export default {
-
+  data() {
+    return {
+      currentGreetingIndex: null
+    };
+  },
+  mounted() {
+    this.loop = setInterval(() => {
+      scifi(this.$refs.greeting, {
+        content: this.getGreeting()
+      });
+    }, 3000);
+  },
+  methods: {
+    getRandomIndex(currentIndex) {
+      const nextIndex = Math.floor(Math.random() * GREETINGS.length);
+      if(currentIndex === null) {
+        return nextIndex;
+      }
+      return currentIndex === nextIndex ? this.getRandomIndex(currentIndex) : nextIndex;
+    },
+    getGreeting() {
+      this.currentGreetingIndex = this.getRandomIndex(this.currentGreetingIndex);
+      const greeting = GREETINGS[this.currentGreetingIndex];
+      return greeting;
+    }
+  },
+  beforeDestroy() {
+    if(this.loop) {
+      clearInterval(this.loop);
+    }
+  }
 };
 
 </script>
