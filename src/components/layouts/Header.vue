@@ -64,6 +64,10 @@ export default {
 
 <style scoped lang="postcss">
 
+span {
+  display: inline;
+}
+
 .nav-button {
   color: black;
   background-color: var(--darkgreen);
